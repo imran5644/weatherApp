@@ -4,60 +4,13 @@
 <title>Weather App</title>
 </head>
 <body>
-    <header class="header">
-        <form class="search-form bs-btn">
-          <label for="" class="search-form__label"></label>
-          <input
-            type="text"
-            class="search-form__input"
-            placeholder="Enter location here..."
-          />
-          <button class="search-form__btn">
-            <img src="assets/images/search-white.svg" alt="search" />
-          </button>
-        </form>
-      </header>
-      <main class="main">
-        <div class="location">
-          <img src="./assets/images/location.svg" alt="" class="location__icon">
-          <h1 class="location__name text-shadow"></h1>
-        </div>
-  
-        <div class="weather-main">
-          <img src="" alt="" class="weather-main__icon" />
-          <h2 class="weather-main__temp text-shadow"></h2>
-        </div>
-  
-          <div class="weather-feels-like flex">
-            <p class="weather-feels-like__title">Feels Like</p>
-            <span class="weather-feels-like__value extra-value"></span>
-          </div>
-          <div class="weather-description flex">
-            <p class="weather-description__title">Description</p>
-            <span class="weather-description__value"></span>
-          </div>
-          <div class="weather-min flex">
-            <p class="weather-min__title">Min</p>
-            <span class="weather-min__value extra-value"></span>
-          </div>
-          <div class="weather-max flex">
-            <p class="weather-max__title">Max</p>
-            <span class="weather-max__value extra-value"></span>
-          </div>
-          <div class="weather-sunrise flex">
-            <p class="weather-sunrise__title">Sunrise</p>
-            <span class="weather-sunrise__value extra-value"></span>
-          </div>
-          <div class="weather-sunset flex">
-            <p class="weather-sunset__title">Sunset</p>
-            <span class="weather-sunset__value extra-value"></span>
-          </div>
-        </div>
-      </main>
-  
-     
-    <script src="main.js"></script>
-    
+  <div class="uk-container">
+    <div class="uk-card uk-card-body uk-card-primary">
+        <h3 class="uk-card-title">Weather App</h3>
 
+        <button class="uk-button uk-button-default" uk-tooltip="title: Hello World">search</button>
+    </div>
+</div>
+    <script src="main.js"></script>
 </body>
 </html>

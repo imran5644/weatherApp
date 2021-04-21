@@ -19,5 +19,8 @@
   "devDependencies": {
     "webpack": "^5.35.0",
     "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "uikit": "^3.6.19"
   }
 }
