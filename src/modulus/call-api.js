@@ -3,7 +3,7 @@ import {createCard, removeCard, backgroundChange} from './dom-manipulation';
 async function fetchWeather(search){
     
 try {
-    const response = await fetch(`http://api.weatherbit.io/v2.0/current?key=9d79f0dae0494f8f89edd9f03706c15c&city=${search}`,
+    const response = await fetch(`https://api.weatherbit.io/v2.0/current?key=9d79f0dae0494f8f89edd9f03706c15c&city=${search}`,
      { mode: "cors" });
      
      const weather = await response.json();
@@ -20,7 +20,7 @@ try {
         weather.data[0].weather.icon);
 }
 catch (error) {
-        alert("Error:" + error)
+        alert("Error:" + error);
 }
 
 }
@@ -29,7 +29,12 @@ catch (error) {
 function searchCity() {
     const input = document.querySelector('input');
     const button = document.querySelector('button');
-
+    
+    document.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          fetchWeather(input.value);
+        }
+    });
     
     button.addEventListener('click', () => {
         fetchWeather(input.value);
