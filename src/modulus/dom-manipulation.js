@@ -6,7 +6,7 @@ function removeCard(){
     }
 }
 
-function createCard(city, temperature, humidity, wind) {
+function createCard(city, temperature, humidity, description) {
     const section = document.createElement("div")
     section.classList.add("uk-section")
   
@@ -29,15 +29,15 @@ function createCard(city, temperature, humidity, wind) {
   
     const tempParagraph = document.createElement("p")
     tempParagraph.setAttribute("id", "temp")
-    tempParagraph.innerHTML = "Temperature:" + temperature
+    tempParagraph.innerHTML = "Temperature: " + temperature + "°C"
   
     const humidityParagraph = document.createElement("p")
     humidityParagraph.setAttribute("id", "humid")
-    humidityParagraph.innerHTML = "Humidity:" + humidity
+    humidityParagraph.innerHTML = "Humidity: " + humidity + "%"
   
-    const windParagraph = document.createElement("p")
-    windParagraph.setAttribute("id", "wind")
-    windParagraph.innerHTML = "Wind speed:" + wind
+    const descriptionParagraph  = document.createElement("p")
+    descriptionParagraph.setAttribute("id", "description")
+    descriptionParagraph.innerHTML = "Wind speed:" + description
   
     const cardFooter = document.createElement("div")
     cardFooter.classList.add("uk-card-footer")
@@ -56,7 +56,7 @@ function createCard(city, temperature, humidity, wind) {
     cardParent.appendChild(cardBody)
     cardBody.appendChild(tempParagraph)
     cardBody.appendChild(humidityParagraph)
-    cardBody.appendChild(windParagraph)
+    cardBody.appendChild(descriptionParagraph)
   
     cardParent.appendChild(cardFooter)
     cardFooter.appendChild(unitSwitch)
