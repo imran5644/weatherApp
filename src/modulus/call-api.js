@@ -2,7 +2,7 @@ import {createCard, removeCard, backgroundChange} from './dom-manipulation';
 
 let unitIsCelcius = true;
 
-function switchUnit() {
+const switchUnit = () => {
     const temperatureM = document.getElementById("temp");
     const windM = document.getElementById("wind");
     const temperatureF = document.getElementById("tempF");
@@ -27,7 +27,7 @@ function switchUnit() {
     });
 }
 
-async function fetchWeather(search){
+const  fetchWeather = async (search) => {
     
 try {
     const responseM = await fetch(`https://api.weatherbit.io/v2.0/current?key=9d79f0dae0494f8f89edd9f03706c15c&city=${search}&units=M`,
@@ -56,8 +56,6 @@ try {
      );
 
         switchUnit();
-        console.log(weatherM.data[0])
-        console.log(weatherF.data[0])
 }
 catch (error) {
         alert("Error:" + error);
@@ -66,7 +64,7 @@ catch (error) {
 }
 
 
-function searchCity() {
+const searchCity = () => {
     const input = document.querySelector("input");
     const button = document.querySelector("button");
     

@@ -1,12 +1,12 @@
 const background = document.querySelector("#background");
 
-function removeCard(){
+const removeCard = () => {
     while(background.firstChild){
         background.firstChild.remove();
     }
 }
 
-function createCard(city, temperature, temperatureF, humidity, description, icon, wind, windF) {
+const createCard = (city, temperature, temperatureF, humidity, description, icon, wind, windF) => {
     const section = document.createElement("div");
     section.classList.add("uk-section");
   
@@ -113,7 +113,7 @@ function createCard(city, temperature, temperatureF, humidity, description, icon
     cardFooter.appendChild(unitSwitch);
   }
 
-  function backgroundChange(partOfTheDay) {
+   const backgroundChange = (partOfTheDay) => {
     const background = document.querySelector('#background');
 
     if(partOfTheDay === "d") {
