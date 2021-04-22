@@ -96,6 +96,20 @@ function createCard(city, temperature, humidity, description, icon, wind) {
     cardParent.appendChild(cardFooter);
     cardFooter.appendChild(unitSwitch);
   }
+
+  function backgroundChange(partOfTheDay) {
+    const background = document.querySelector('#background');
+
+    if(partOfTheDay === "d") {
+        background.style.backgroundImage = "url(./images/day.jpg)";
+    }
+    if(partOfTheDay === "n") {
+        background.style.backgroundImage = "url(./images/night.jpg)";
+    }
+    else {
+        console.log(partOfTheDay)
+      }
+  }
   
 
-  export { createCard, removeCard };
+  export { createCard, removeCard, backgroundChange };
