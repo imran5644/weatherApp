@@ -5,13 +5,50 @@
 <link rel="stylesheet" href="../node_modules/uikit/dist/css/uikit.min.css">
 </head>
 <body>
-  <div class="uk-container">
-    <div class="uk-card uk-card-body uk-card-primary">
-        <h3 class="uk-card-title">Weather App</h3>
 
-        <button class="uk-button uk-button-default" uk-tooltip="title: Hello World">search</button>
+<div class="uk-section uk-section-muted">
+    <div class="uk-container uk-flex uk-flex-center uk-margin">
+      <h1 class="uk-heading-small">Weather App</h5>
     </div>
-</div>
+    <div class="uk-container uk-flex uk-flex-center">
+
+      <form>
+        <div>
+          <div>
+            <input type="text" class="uk-input uk-form-width-large" placeholder="What's the Weather like today?"><button
+              class="uk-button uk-button-primary">search</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="uk-background-cover uk-flex uk-flex-center " uk-height-viewport="offset-top: true" 
+  style="background-image: url(./img/1.jpg);">
+
+<div class="uk-section">
+    <div class="">
+      <div class="uk-card uk-card-default">
+
+        <div class="uk-card-header">
+          <h4 class="uk-card-title">City: Tokyo</h4>
+        </div>
+
+        <div class="uk-card-body">
+            <p>20 degrees</p>
+            <p>Humidity: 20 degrees</p>
+            <p>Wind: 20 degrees</p>
+        </div>
+
+        <div class="uk-card-footer">
+          <p>Change F to C</p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  </div>
     <script src="main.js"></script>
 </body>
 </html>

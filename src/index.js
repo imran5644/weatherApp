@@ -3,4 +3,4 @@ import Icons from 'uikit/dist/js/uikit-icons';
 
 UIkit.use(Icons);
 
-UIkit.notification('hello');
+// UIkit.notification('hello');
