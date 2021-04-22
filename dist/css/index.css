@@ -2554,10 +2554,10 @@ select.uk-form-width-xsmall {
  .uk-section {
   display: flow-root;
   box-sizing: border-box;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border: 2px solid black;
-  height: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: -10px;
+  height: 220px;
 } 
 
 /* Desktop and bigger */

@@ -54,7 +54,7 @@ const fetchWeather = async (search) => {
 
     switchUnit();
   } catch (error) {
-
+    alert(`Error:${error}`); // eslint-disable-line no-alert
   }
 };
 

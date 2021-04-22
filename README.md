@@ -5,6 +5,7 @@
 ## App Screenshot
 ![screenshot](./screenshot/Screenshot.png)
 
+
 ## Live Link Demo
 
 [Live Link Demo](https://imran5644.github.io/weatherApp/)
