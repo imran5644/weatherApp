@@ -1,4 +1,6 @@
-import { createCard, removeCard, backgroundChange, switchUnit } from './dom-manipulation';
+import {
+  createCard, removeCard, backgroundChange, switchUnit,
+} from './dom-manipulation';
 
 const fetchWeather = async (search) => {
   try {

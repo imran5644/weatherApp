@@ -142,4 +142,6 @@ const backgroundChange = (partOfTheDay) => {
   }
 };
 
-export { createCard, removeCard, backgroundChange, switchUnit };
+export {
+  createCard, removeCard, backgroundChange, switchUnit,
+};
