@@ -1,4 +1,29 @@
 const background = document.querySelector('#background');
+let unitIsCelcius = true;
+
+const switchUnit = () => {
+  const temperatureM = document.getElementById('temp');
+  const windM = document.getElementById('wind');
+  const temperatureF = document.getElementById('tempF');
+  const windF = document.getElementById('windF');
+
+  const unitSwitcher = document.getElementById('unitSwitcher');
+  unitSwitcher.addEventListener('click', () => {
+    unitIsCelcius = !unitIsCelcius;
+
+    if (!unitIsCelcius) {
+      temperatureM.style.display = 'none';
+      temperatureF.style.display = 'block';
+      windM.style.display = 'none';
+      windF.style.display = 'block';
+    } else {
+      temperatureM.style.display = 'block';
+      temperatureF.style.display = 'none';
+      windM.style.display = 'block';
+      windF.style.display = 'none';
+    }
+  });
+};
 
 const removeCard = () => {
   while (background.firstChild) {
@@ -117,4 +142,4 @@ const backgroundChange = (partOfTheDay) => {
   }
 };
 
-export { createCard, removeCard, backgroundChange };
+export { createCard, removeCard, backgroundChange, switchUnit };
