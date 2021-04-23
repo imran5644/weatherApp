@@ -37,10 +37,17 @@ To get a local copy up and running follow these simple example steps.
 - Run `git clone https://github.com/imran5644/weatherApp.git`
 
 
-
 To make any change,
 
 - Open related file by using text editor.
+
+## How do I get access of the api's?
+  - visit the website (https://openweathermap.org/ or https://www.weatherbit.io/api).
+  - Read the documentation. The specifics for using any API are usually documented on the service’s website.
+  - Sign up for an account.
+  - Use the API key provided in the account dashboard.
+  - Use this Api Key in the provided url to access the server data.
+
 
 ## Usage
   - Add a .env file on the root folder of your project with all your API keys as the example below
